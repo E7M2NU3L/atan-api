@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "build": [
+        {
+            "src": "predictive_analyser/wsgi.py",
+        "use": "@vercel/python",
+        "config": {
+            "maxLambdaSize": "15mb",
+            "runtime": "python3.7"
+        }
+        },
+        {
+            "src": "build.sh"
+        }
+    ]
+}
